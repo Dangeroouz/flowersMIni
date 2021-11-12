@@ -1,0 +1,141 @@
+@import "variables.scss";
+@import "mixins.scss";
+.headerBanner{
+    background: url(../img/headbanner.png);
+    background-size: cover;
+    height: 420px;
+}   
+body{
+    margin: 0px;
+}
+.mainContainer{
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+.header{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+.headerLeft{
+    display: flex;
+    align-items: center;
+    @include text($brown, $mainFont)
+    img{
+        padding-left: 60px;
+    }
+}
+.headerNav{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    padding-right:400px;
+    @include text($brown, $mainFont);
+    p:hover{
+        text-decoration: underline;
+    }
+}
+.headerLogo{
+    align-self: center;
+}
+.headerBanner h2{
+    font-size: 70px;
+    display: flex;
+    margin-top: auto;
+    padding-top: 170px;
+    font-family: $mainFont;
+    margin-left: 100px;
+    color: $brown;
+}
+.inputs input{
+    width: 24vw;
+    height: 45px;
+    border: 2px solid gray;
+}
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.priceRange{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.priceRangeInput{
+    height: 0px !important;
+}
+.priceRange p{
+    margin: 0px;
+}
+.mainSitka{
+    display: grid;
+    grid:  1fr 1fr 1fr/1fr 1fr 1fr;
+    margin-top: 50px;
+}
+.mainBlock{
+    margin: 0 auto;
+    padding: 40px;
+    background: rgb(247, 244, 244);
+    margin-top: 30px;
+    font-size: 22px;
+    border-radius: 15px;
+    text-align: center;
+    @include text($brown, $mainFont)
+    img{
+        border-radius: 10px;
+    }
+}
+.priceRange p{
+    font-family: $mainFont;
+}
+.mainBlock input{
+    background: $brown;
+    color: white;
+    padding: 10px 50px 10px 50px;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        transition: 0.5s;
+    }
+}
+.mainMore{
+    padding: 25px 160px 25px 160px;
+    border: 1px solid gray;
+    width: 170px;
+    margin: 0 auto; 
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 10px;
+    color: $brown;
+    font-family: $mainFont;
+    &:hover{
+        background: $brown;
+        color: white;
+        transition: 0.5s;
+    }
+}
+.footerContainer{
+    height: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $footerColor;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.footerNav1{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    @include text($brown, $mainFont);
+    p:hover{
+        text-decoration: underline;
+    }
+}
+.footerNav2{
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+}
